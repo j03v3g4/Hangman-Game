@@ -5,61 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script src="assets/javascript/game.js"></script>
     <title>Document</title>
 </head>
 <body>
+
     <h1 id="instructions">Press any letter to get started!</h1>
 
         <br>
-
-            <div>
-                <strong>Total Wins:</strong>
-            </div>
-
-        <br>
-
-            <div id="wins">
-            </div>
+            
+            <center>
+                <div id="current">
+                    <strong>Current Word:</strong>
+                </div>
+            </center>
 
         <br>
-               
-            <div>
-                <strong>Current Word:</strong>
-            </div>
-        
-        <br>
 
-            <div id="current">
-            </div>
+            <center>
+                <div id="guessletter">
+                    <strong>Letters Guessed:</strong>
+                </div>
+            </center>
 
         <br>
             
-            <div>
+            <div id="guessleft">
                 <strong>Guesses Remaining:</strong>
             </div>
 
         <br>
 
-            <div id="guessleft">
+            <div id="wins">
+                <strong>Total Wins:</strong>   
             </div>
-
-        <br>
-
-            <div>
-                <strong>Letters Guessed:</strong>
-            </div>
-
-        <br>
-
-            <div id="guessletter">
-            </div>
-
+                
         <br>
 
         <!--Reset button-->
-            <center>
-                <button id="reset" onclick="#">Reset</button>
-            </center>
-</body>
+    <center>
+        <button id="reset" onclick="#">Reset</button>
+    </center>
+
+    </body>
 </html>
