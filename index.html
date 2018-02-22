@@ -4,49 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Reset -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Javascript -->
     <script src="assets/javascript/game.js"></script>
-    <title>Document</title>
+    <title>Hangman-Game</title>
 </head>
 <body>
-
-    <h1 id="instructions">Press any letter to get started!</h1>
-
-        <br>
-            
-            <center>
-                <div id="current">
-                    <strong>Current Word:</strong>
-                </div>
-            </center>
-
-        <br>
-
-            <center>
-                <div id="guessletter">
-                    <strong>Letters Guessed:</strong>
-                </div>
-            </center>
-
-        <br>
-            
-            <div id="guessleft">
-                <strong>Guesses Remaining:</strong>
-            </div>
-
-        <br>
-
-            <div id="wins">
-                <strong>Total Wins:</strong>   
-            </div>
-                
-        <br>
-
-        <!--Reset button-->
-    <center>
-        <button id="reset" onclick="#">Reset</button>
-    </center>
-
-    </body>
+</body>
+    <div class="container"></div>
+        <header>
+            <h1>Hangman Game</h1>
+            <h3 id="instructions">Press any letter to get started!</h3>
+        </header>
+        <div class="underScore">word</div>
+        <div class="rightGuess"></div>
+        <div class="wrongGuess"></div>
 </html>
