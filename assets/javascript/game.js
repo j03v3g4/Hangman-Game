@@ -1,3 +1,5 @@
+// Turn it on
+window.onload = function () {
 // Create an array of words
 const words = ['blue', 'red', 'orange','grey', 'pink', 'peach', 'brown', 'cyan' ];
 
@@ -7,6 +9,7 @@ let word = words[Math.floor(Math.random() * words.length)];
 let rGuess = [];
 let wGuess = [];
 let underScore = [];
+var lives = 5;
 
 // DOM HARD MODE
 let docUnderScore = document.getElementsByClassName('underScore');
@@ -31,24 +34,28 @@ document.addEventListener('keypress', (event) => {
     if(word.indexOf(keyword) > -1) {
                             console.log(true);
     // Add to rGuess
-        docRightGuess.innerHTML = rightGuess.join(' ');
+        // docRightGuess[0].innerHTML = rightGuess.join(' ');
         rGuess.push(keyword);
                             console.log(rGuess);
     // Replace underscore
-        docUnderScore.innerHTML = underScore.join(' ');
+        // docUnderScore[0].innerHTML = underScore.join(' ');
         underScore[word.indexOf(keyword)] = keyword;
                             console.log(underScore);
         // Check if word matches guesses
             if(underScore.join('') == word) {
                 alert('VICTORY!');
+                // And choose new word
             }
     }
 // If guess is wrong
     else {
     // Add to wGuess
-        docWrongGuess.innerHTML = wrongGuess.join(' ');
+        // docWrongGuess[0].innerHTML = wrongGuess.join(' ');
         wGuess.push(keyword);
-                            console.log(wGuess);    
+                            console.log(wGuess);
+        // And subtract 1 from lives
+            // If lives reach zero alert('DEFEAT!')
+            // and choose new word
     }
-
 });
+}
